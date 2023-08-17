@@ -11,10 +11,14 @@ edit the "excel.php"  with the corresponding csv file and the output name of you
 
 Example :
 
-/* Load a CSV file and save as a XLS */
+/* Load a CSV file and save as a XLS */ .
+
 $spreadsheet = $reader->load(" myCSVfile");
+
 $writer = new Xls($spreadsheet);
+
 $writer->save('outputName.xls');
  
 $spreadsheet->disconnectWorksheets();
+
 unset($spreadsheet);
